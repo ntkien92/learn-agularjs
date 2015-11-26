@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <script src="js/shared/angular.min.js" ></script>
+</head>
+
+<body ng-app = "ForecastApp">
+  <div>
+    <input type="text" ng-model="myName" placeholder="Input your name" />
+    <h1>Hello {{myName}}</h1>
+  </div>
+
+  <div class="" ng-controller = "MainController">
+    <div class="" ng-repeat="arc in articles">
+      <img src="{{arc.link_flickr}}" alt="" />
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="js/app.js">
+  </script>
+
+  <script src="js/controllers/MainController.js">
+
+  </script>
+
+  <script src="js/services/forecast.js">
+
+  </script>
+</body>
+</html>
